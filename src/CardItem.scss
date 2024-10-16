@@ -1,0 +1,65 @@
+.card {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  &--first {
+    background-color: #229cab;
+  }
+  &--second {
+    background-color: #1e8a72;
+  }
+  &--third {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 106%;
+    background-color: #c4554e;
+    box-shadow: 4px 2px 25px 5px rgba(128, 128, 128, 0.341);
+    z-index: 1;
+    .card__title {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  &--fourth {
+    background-color: #282f37;
+  }
+  &__title {
+    padding: 20px 0;
+    font-size: 26px;
+    border-bottom: 2px solid #ffffff;
+  }
+  &__price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: transparent;
+  }
+  &__price {
+    padding-top: 10px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &__text-top {
+    align-self: flex-start;
+  }
+  &__text-bottom {
+    align-self: flex-end;
+  }
+  &__speed {
+    padding: 15px 0;
+    color: #575b5a;
+    background-color: #f8f8f8;
+  }
+  &__info {
+    padding: 10px;
+    color: #575b5a;
+    background-color: #eeeeee;
+  }
+}
