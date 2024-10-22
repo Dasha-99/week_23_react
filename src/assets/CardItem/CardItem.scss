@@ -4,6 +4,9 @@
   font-size: 20px;
   text-align: center;
   color: #ffffff;
+  :hover {
+    cursor: pointer;
+  }
   &--first {
     background-color: #229cab;
   }
@@ -11,11 +14,16 @@
     background-color: #1e8a72;
   }
   &--third {
+    background-color: #c4554e;
+  }
+  &--fourth {
+    background-color: #282f37;
+  }
+  &--selected {
     display: flex;
     flex-direction: column;
     align-self: center;
     height: 106%;
-    background-color: #c4554e;
     box-shadow: 4px 2px 25px 5px rgba(128, 128, 128, 0.341);
     z-index: 1;
     .card__title {
@@ -25,9 +33,6 @@
       align-items: center;
       gap: 10px;
     }
-  }
-  &--fourth {
-    background-color: #282f37;
   }
   &__title {
     padding: 20px 0;

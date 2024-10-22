@@ -1,0 +1,21 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 310px);
+  gap: 2px;
+  height: max-content;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 310px);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards-container {
+    grid-template-columns: 310px;
+    gap: 30px;
+  }
+}

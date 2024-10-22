@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import CardItem from "./CardItem.jsx";
+import CardsContainer from "./assets/CardsContainer/CardsContainer";
 import './main.scss';
 
 const rates = [
@@ -12,13 +12,6 @@ const rates = [
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div className="cards-container">
-      {rates.map((rate) =>
-        <CardItem
-          key={rate.id}
-          rate={rate.id}
-          price={rate.price}
-          speed={rate.speed} />)}
-    </div>
+    <CardsContainer rates={rates} />
   </StrictMode>
 );

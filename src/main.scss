@@ -6,16 +6,19 @@
 
 #root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  gap: 30px;
+  min-height: 100vh;
+  padding: 50px;
   background-color: #fafafa;
 }
 
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 310px);
-  gap: 2px;
-  height: max-content;
-  margin: 0 auto;
+.message {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000000;
 }
