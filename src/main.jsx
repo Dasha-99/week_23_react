@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import CardsContainer from "./assets/CardsContainer/CardsContainer";
+import CardsContainer from "./components/CardsContainer/CardsContainer";
 import './main.scss';
 
 const rates = [
